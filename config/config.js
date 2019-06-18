@@ -10,7 +10,7 @@ module.exports = {
     "logging": false
   },
   "test": {
-    "username": "postgres",
+    "username": "",
     "password": process.env.POSTGRES_PASSWORD,
     "database": process.env.POSTGRES_DB,
     "host": "localhost",
