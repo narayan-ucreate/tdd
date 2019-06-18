@@ -7,6 +7,8 @@ jobs:
   build:
     docker:
       - image: circleci/node:lts
+        environment:
+          NODE_ENV: test
       - image: mdillon/postgis:10
         environment:
           POSTGRES_PASSWORD: postgres
