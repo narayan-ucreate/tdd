@@ -1,7 +1,8 @@
 
+
 const sequelize_fixtures = require('sequelize-fixtures');
 const models = require('./../models/index');
-process.env.NODE_ENV='test'
+
 console.log('env')
 console.log(process.env.NODE_ENV);
 
@@ -28,4 +29,5 @@ describe('User Services', () => {
           const updateinfo = updateUser(updateInfo, userInfo.id);
           assert.ok(updateinfo);
     });
+
 });
