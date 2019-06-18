@@ -10,6 +10,7 @@ jobs:
         environment:
           POSTGRES_PASSWORD: postgres
           POSTGRES_DB: test
+          NODE_ENV: test
     working_directory: ~/repo
 
     steps:
