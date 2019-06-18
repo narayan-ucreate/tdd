@@ -17,8 +17,8 @@ describe('User Services', () => {
         email : 'narayan1@gmail.com',
         stateId : 1
        };
-    it('Create User', () => {
-       const response = createUser(updateInfo);
+    it('Create User', async () => {
+       const response = await createUser(updateInfo);
        console.log('create user response');
        console.log(response);
        assert.ok(response);
