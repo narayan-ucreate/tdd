@@ -28,11 +28,4 @@ describe('User Services', () => {
           const updateinfo = updateUser(updateInfo, userInfo.id);
           assert.ok(updateinfo);
     });
-    after(() => {
-       setTimeout(() => {
-        models.sequelize.sync({
-                force: true
-            });
-       }, 5000);
-    })
 });
