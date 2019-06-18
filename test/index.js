@@ -19,6 +19,8 @@ describe('User Services', () => {
        };
     it('Create User', () => {
        const response = createUser(updateInfo);
+       console.log('create user response');
+       console.log(response);
        assert.ok(response);
     });
     it('Update User', async () => {
