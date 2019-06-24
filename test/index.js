@@ -1,10 +1,9 @@
 require('dotenv').config();
-
+const assert = require('assert');
 const sequelize_fixtures = require('sequelize-fixtures');
 const models = require('./../models/index');
-
 const { createUser, updateUser } = require('./../services/users');
-const assert = require('assert');
+
 describe('User Services', () => {
     before(async () => {
         await sequelize_fixtures.loadFile('fixtures/State.json', models)
