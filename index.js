@@ -1,9 +1,4 @@
-require('dotenv').config();
-const express = require('express')
-const app = express()
-app.use('/', express.static('public'))
-app.get('/', function (req, res) {
-  res.send('Hello World')
-})
+// const cluster = require('cluster');
+// const numCPUs = require('os').cpus().length;
+// console.log(numCPUs);
 
-app.listen(process.env.PORT)

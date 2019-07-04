@@ -4,6 +4,7 @@ const sequelize_fixtures = require('sequelize-fixtures');
 const models = require('./../models/index');
 const { createUser, updateUser } = require('./../services/users');
 
+
 describe('User Services', () => {
     before(async () => {
         await sequelize_fixtures.loadFile('fixtures/State.json', models)
